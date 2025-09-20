@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom3</title>
+    <script>
+        function loaded(){
+            //vai ser depois que a pagina for carregada.
+            let t = document.getElementById("titulo")
+            // gravando a tag
+
+
+            t.addEventListener("mousemove", mudarText)
+
+
+            function mudarText(){
+                this.innerHTML = "Novo texto";
+            }
+
+            t.addEventListener("mouseout", vontaText)
+
+            function vontaText(){
+                this.innerHTML = "Ola Mundo 1 "
+            }
+
+            
+
+
+        }
+
+
+    </script>
+
+</head>
+<body onload="loaded()">
+    <h1 id="titulo">  
+        Ola Munda
+    </h1>
+</body>
+</html>

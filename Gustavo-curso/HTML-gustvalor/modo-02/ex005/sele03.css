@@ -1,0 +1,28 @@
+@charset "UFT-8";
+body
+{
+    background-color: rgba(18, 231, 231, 0.334);
+}
+h1
+{
+    background-color: aquamarine;
+}
+h1#principal
+{
+    color: blueviolet;
+    text-align: center;
+}
+.a
+{
+    color: blue;    
+    text-align: center;
+}
+.b
+{
+    color: burlywood;
+    text-align: right;
+}
+.c
+{
+    background-color: chocolate;
+}

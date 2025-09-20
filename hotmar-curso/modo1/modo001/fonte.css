@@ -1,0 +1,43 @@
+.container{
+      
+}
+
+.exemplo1{
+    
+    color: blueviolet;
+}
+
+.exemplo2{
+    color: aqua;
+    font-size: 2em;
+    
+}
+
+.exemplo3{
+    color: brown;
+    font-size: 2rem;/*vai ser 2 vezes o valor raiz do valor (o valor raiz é o html)*/
+    
+}
+
+html{
+    font-size: 16px;
+}
+
+
+/*
+primeira coisa pr ser obicervada.
+
+o filho vai erdar a fonte do pai.
+
+
+exeto quando vc ja deixar definido a forte para o filho 
+*/
+
+/*
+1em -> na fonte o sicnificado ele é o seguinte, em é a fonte normal que ele deveria ter 
+se vc colocar 2 na frente do (em) quer dizer que ele vai ser 2 vezes o tamanho que ele deveria ter.
+
+ele tbm vai se baziar na fonte pai dele, se o filho colocar 2em a fonte vai ficar 2 vezes maior que o pai.
+*/
+
+

@@ -1,0 +1,39 @@
+.card{
+background-color: #ccc;
+width: 300px;
+height: 300px;
+overflow: auto; /* usando o overflow: auto pq ele vai fazer automatico.*/
+}
+.lorem{
+    font-size: 20px;
+}
+#primeira{
+height: 100px;
+width: 100px;
+background-color: blue;
+color: azure;
+padding: 10px;
+border: 10px solid black;
+}
+#segunda{
+    height: 100px;
+    width: 140px;
+    background-color:blueviolet;
+    color: azure; 
+}
+#terceira{
+    height: 100px;
+width: 100px;
+background-color: brown;
+color: azure;
+}
+#quarta{
+    height: 100px;
+width: 100px;
+background-color:chartreuse;
+color: azure;
+padding: 10px;
+border: 10px solid burlywood;
+box-sizing: border-box; /*vai permanecer com a mesma autura e autura. */
+
+}

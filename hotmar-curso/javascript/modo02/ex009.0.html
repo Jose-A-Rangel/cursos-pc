@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+/*essa funao aqui é para aprender a usar o setInterval( função,tempo); 
+        aqui da pr ir adicionado.
+*/
+
+
+
+
+        /*
+        function mundarCor(){
+            let h = document.getElementsByTagName("h1")[0]
+
+            h.style.color = "blue";
+
+        
+        }
+            */
+
+         var numero = 0;
+        function atualizarText(){
+            let h = document.getElementsByTagName("h1")[0]
+            h.innerHTML += " " + numero;
+            numero++;
+
+            /*
+            explicando, aqui a funlçao ela vai fazer o titulo mundar e adicionar numero, os numeros sao colocado por (numero++;) assim ele vai fazendo as adicoes dos numeros.
+
+            vai comersar com o zero, por conta que la na variavel(var) ta falando
+            */
+        }
+
+        /*
+        para fazer isso, vai precisar do setTimeout, vai ter um função dentro dele e o tempo, com isso, o que fiver dentro da funtao dele é o que vai ser realizado, e o tempo vai ser difinilo no setTimeout(f, tempo)
+        
+        */
+
+        function mudarTexto(){
+            let h = document.getElementsByTagName("h1")[0]
+
+            h.innerHTML = "Novo Titulo";
+
+            
+
+            setInterval( atualizarText, 3000);
+
+            /*
+            setInterval(função, tempo que vai ser realzado)  vai precisar de uma finçõa e o tempo que vai precisa pr fazer o efeito->  
+            */
+
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <input onclick="mudarTexto()" type="submit" value="Muldar">
+</body>
+</html>

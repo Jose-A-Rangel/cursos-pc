@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positions-absolute</title>
+    <style>
+        /*
+        ta td de baixo um do outro pq a div é tipo bloc, fazendo assim tomando td o esparsso ate o fim, com isso deixando as outra div com espasso so mente na proxima linha.
+
+
+        display: inline-block; -> usando isso vai deixar td um do lado da outra.(isso transforma o inline em block)
+
+
+        */
+        .quadrado{
+             /*display: inline-block;*/
+            width:100px ; /*largura*/
+            height: 100px; /*altura*/
+        }
+        .quadrado-red{          
+            background-color: red;
+            position: absolute;
+            right: 0px;
+            bottom: 0px;           
+             
+        }
+        .quadrado-red:hover{
+            background-color: red;
+            position: absolute;
+            right: 0px;
+            top: 0px;           
+        }
+        .quadrado-blue{
+            background-color: blue;
+            position: absolute;
+            left: 0px; 
+            bottom: 0px;                                            
+        }
+        .quadrado-blue:hover{
+            background-color: blue;
+            position: absolute;
+            left: 0px; 
+            top: 0px;
+        }
+        .quadrado-green{            
+            background-color: green;
+            position: absolute;
+            top: 0px;
+            left: 200px;
+        } 
+        
+        .quadro{     
+            position: relative;      
+            width: 500px; /*largura*/
+            height: 400px;/*altura*/
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="quadro">    
+        <div class="quadrado quadrado-red" ></div>
+        <div class="quadrado quadrado-blue" ></div>
+        <div class="quadrado quadrado-green" ></div>
+    </div>
+</body>
+</html>

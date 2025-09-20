@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-elemento</title>
+    <style>
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkturquoise;
+        }
+        a
+        {
+            color: red;
+            text-decoration: none;
+        }
+        a:visited
+        {
+            color: rgb(235, 107, 9);
+            /*
+            quando vc ja vizitou o site
+            */
+        }
+        a:hover
+        {
+            text-decoration: underline;
+            /*
+            quando passa o mause vai cria o barra no links.
+            */
+            color: rgb(0, 0, 0);
+        }
+        a:active
+        {
+            color: rgb(210, 30, 162);
+            /*
+            quando vc quicar, e segura, vai ficar amarelo
+            */
+        }
+        a::after
+        {
+             /*pseudo-elemeto after(quer dizer depois) */             
+            content: '[links]';
+            text-decoration: none;
+            font-weight: normal;
+            color: blue;
+        }
+        a::before
+        {
+            /*pseudo-elemento before (quer dizer antes)*/
+            content: 'olha aqui  ';
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: darkgreen;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.primevideo.com/region/na/storefront?contentId=IncludedwithPrime&ref_=atv_nb_lcl_pt_BR&language=pt_BR&ie=UTF8&contentType=merch&merchId=IncludedwithPrime" target="_blank">cursoemvideo</a></li>
+        <li><a href="https://www.crunchyroll.com/pt-br">crunchy</a></li>
+        <li><a href="https://www.cursoemvideo.com/minha-conta/">prime-video</a></li>
+    </ul>
+
+</body>
+</html>

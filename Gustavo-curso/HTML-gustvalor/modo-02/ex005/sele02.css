@@ -1,0 +1,40 @@
+@charset "UFT-8";
+body
+{
+    background-color: rgb(168, 233, 233);
+}
+h1
+{
+    color: blueviolet;
+    
+}
+h1#principal
+{
+    color: brown;
+    text-align: center;
+}
+h1#a
+{
+    color: rgb(153, 197, 110);
+    text-align: right;
+}
+h1#a1
+{
+    color: cornflowerblue;
+    text-align: center;
+}
+/*
+id = tag de seleção.
+usado para selecionar somente um tag, assim da para fazer a modificação que vc quer.
+*/
+
+/*
+class = faz a clasificação do elemento.
+*/
+/*
+
+id-> é unico
+class -> é pr tds
+Da para colocar mais de uma classe no mesmo elemento.
+*/
+

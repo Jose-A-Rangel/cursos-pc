@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <script>
+   function onOver(elemento){
+    elemento.style.backgroundColor = "red"
+    /*quando o maude passar por cima, a cor vai ficar vermelhar */
+   }
+
+   function OnOut(elemento){
+    elemento.style.backgroundColor= "cornflowerblue"
+    /*agora quando sair, vai ficar da cor cornflowerblue, que é a cor antiga dele */
+  }   
+  </script>
+
+  <style>
+    div{
+      display: inline;
+      padding: 10px;
+      font-size: 2rem;
+      background-color: cornflowerblue;
+      color: aliceblue;
+    }
+  </style>
+
+
+</head>
+
+<br>
+<br>
+<body onload="console.log">
+
+  <!--onload ele so vai ser caregado quando terminar de carregar td a tela-->
+
+  <div onmouseover="onOver(this)"
+  onmouseout="OnOut(this)">click</div>
+  <p onmouseover="onOver(this)"
+  onmouseout="OnOut(this)">Texto pr teste</p>
+
+
+</body>
+</html>

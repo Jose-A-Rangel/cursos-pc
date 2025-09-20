@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .container{
+            position: relative;
+            width: 240px;
+            height: 260px;
+        }
+        .video{
+            width: 100%;
+        }
+        
+
+        
+        .container:hover{
+             .controle{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 170%;
+            /*background-color: brown;*/
+            text-align: center;
+
+        }
+
+             .btn{
+            position: relative;
+            width: 20px;
+            padding: 5px;
+            top: 100%;
+            transform: translateY(-140%);
+        }
+    }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <!--
+    <img id="like" src="/imagens/0dd6fd2b1841bd3dbba81ae4f0fbfce0.png" alt="">
+
+    -->
+
+    <!--
+<video controls autoplay muted width="300"  src="/video/Vídeo do WhatsApp de 2025-06-12 à(s) 11.27.17_a80adc72.mp4">
+
+    -->
+    
+    
+    </video>
+    <div class="container" >
+        <video id="video1" class="video" src="/video/Vídeo do WhatsApp de 2025-06-12 à(s) 11.27.17_a80adc72.mp4"></video>
+
+        <div class="controle">
+            <img class="btn" onclick="retroceder()" src="/imagens/play/icons8-15-segundos-retroceder-50.png" alt="menos 15">
+
+           <img class="btn" onclick="aumenta_vel()" src="/imagens/play/icons8-mais-24.png" alt="mais">
+
+
+           <img class="btn" onclick="diminuir_vel()" src="/imagens/play/icons8-menos-48 (1).png" alt="menos">
+
+             <img class="btn" onclick="play()" src="/imagens/play/icons8-reproduzir-50.png" alt="play">
+
+           <img class="btn" onclick="stop()" src="/imagens/play/icons8-pausa-circular-50.png" alt="pause">
+
+         
+
+           
+           
+           <img class="btn" onclick="avancar()" src="/imagens/play/icons8-pular-à-frente-15-segundos-50.png" alt="mais 15">
+
+        </div>
+
+    </div>
+
+    <script src="avançado-html.js">
+
+    </script>
+</body>
+</html>

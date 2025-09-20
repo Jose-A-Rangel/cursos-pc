@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom3.2</title>
+    <script>
+        function loaded(){
+            let t = document.getElementById("mudar")
+            // grava a tag
+
+            t.addEventListener("mousemove", mudarText)
+
+            function mudarText(){
+                this.innerHTML = "Vamos La mudar o mundo"
+            }
+
+            t.addEventListener("mouseout", novo)
+
+            function novo(){
+                this.innerHTML = "Com muita petistencia"
+            }
+
+
+
+
+
+
+            
+
+
+
+
+        }
+        function mudaa(elemento){
+            elemento.style.backgroundColor = "red"
+        }
+        function voltaa(elemento){
+            elemento.style.backgroundColor = "aquamarine"
+        }
+        
+    </script>
+</head>
+<body onload="loaded()">
+    <h1 class="marcela">
+        Cadastro.
+    </h1>
+    <h1 id="marce">
+        casa
+    </h1>
+    <form>
+        <input type="text" nome = "texto" placeholder="Nome">
+        <br>
+        <br>
+         <input type="text" nome = "Sobre" placeholder="Sobre Nome">
+         <br>
+         <br>
+         <input type="email" nome = "Sobre-Nome" placeholder="Sobre Nome" >
+         <br><br>
+         <input type="submit" value = "Nubia" nome = "botao" onmousemove = "mudaa(this)" onmouseout="voltaa(this)">
+
+    </form>
+
+    <h2 id="mudar">
+        Mude o que ta escrito, passando o mause
+    </h2>
+</body>
+</html>

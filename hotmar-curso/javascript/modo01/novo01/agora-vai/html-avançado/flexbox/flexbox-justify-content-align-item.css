@@ -1,0 +1,55 @@
+.container{
+    background-color: darkgray;
+    height: 400px;
+    color: white;
+    display: flex;
+    
+
+    flex-direction: row;
+    /*justify-content: space-around;*/
+
+    align-items: flex-end;
+
+    
+    
+   
+}
+.r1{
+    background-color: red;
+}
+.r2{
+    background-color: blue;
+}
+.r3{
+    background-color: green;
+}
+
+.rect{
+width: 200px;
+height: 200px;
+
+}
+/*
+justify-content: flex-end; vai ficar colado, na direta
+
+
+justify-content: center; vai deixar no centro
+
+
+
+ justify-content: space-between; vai tenta deixar um espaço entre eles.
+
+
+ justify-content: space-around; vai deixar um espaço em tds os lados.
+*/
+
+/*
+ align-items: flex-end;
+A propriedade align-items no Flexbox (ou Grid) alinha os itens filhos de um contêiner ao longo do eixo cruzado (o eixo perpendicular ao flex-direction).
+
+📐 Eixo cruzado:
+flex-direction: row → eixo cruzado é vertical (de cima para baixo)
+
+flex-direction: column → eixo cruzado é horizontal (da esquerda para a direita)
+
+*/

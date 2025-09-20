@@ -1,0 +1,22 @@
+.card{
+    background-color: #ccc;
+    width: 300px;
+    height: 300px;
+    /*overflow:-> quer dizer vazar / hiddern -> quer dizer escondido */
+
+    /*overflow: hidden; -> so vai esconder o texto.
+    overflow: visible; -> é a que vaza.
+    */
+    /*overflow:scroll; faz um scroll tanto de baixio pr cima quanto das nateras. */
+
+
+  /*overflow: auto ; vai se adapitar, se for nessesario ele vai fazer as correçoes. */ 
+  
+
+  /* overflow-y: scroll;-> colocar do lado y */
+
+
+}
+.lorem{
+    font-size: 20px;
+}

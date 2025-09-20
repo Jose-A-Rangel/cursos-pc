@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula21</title>
+    <style>
+        
+    </style>
+    <script>
+        //let a = {nome: "igor", n1:7.3}
+
+        //localStorage.setItem("aluno", JSON.stringify(a));
+
+        let a = localStorage.getItem("aluno");
+        console.log(JSON.parse(a));
+
+
+        localStorage.clear()
+        // apaga td da memoria
+
+
+    </script>
+</head>
+<body>
+
+
+        <h1 id="nome"></h1>
+
+        <input type="text" oninput="atualiar(this)">
+
+
+
+
+    <!--
+    quando usando o localStorage.setItem(); tem que ter uma chave e depois o que vai ser chamado, exeplo, é coloca nome e depois jose.
+
+
+    para ser chamado no localStorage.getItem pode colcor em um variavel e chama com o nome da chave.
+
+
+    para remover é so usar localStorage.removeItem("nome"); com o nome da chave e vai remover do armazenamento.
+
+    
+    -->
+</body>
+</html>

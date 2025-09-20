@@ -1,0 +1,33 @@
+@keyframes changeColor{
+    0%{ background-color: red;}
+    25%{background-color: aquamarine;}
+    50%{background-color: yellow;}
+    100%{background-color: blue;}
+}
+/*
+pode ser colocado varios estagios. 
+*/
+
+.box{
+    width: 200px;
+    height: 200px;
+    border-style:solid ;
+    animation-name: changeColor;
+    animation-duration: 10s;
+}
+
+/*
+@keyframes serve para criar animações personalizadas no CSS.
+Ele diz como o elemento vai mudar com o tempo — por exemplo: cor, tamanho, posição, opacidade…
+
+2️⃣ Como funciona
+Você cria a animação dizendo o que acontece em cada momento.
+Esses momentos podem ser definidos em porcentagens (% do tempo total) ou com palavras-chave como from (início) e to (fim).
+
+
+para fazer a animacao, vai precisar tbm de ir no box(onde ta localizado) e usar os seguinte 
+
+    animation-name: changeColor; -> informa o nome que vai ser modificado.
+    animation-duration: 10s; -> informa o tempo que vai fazer animalçao.
+
+*/

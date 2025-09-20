@@ -1,0 +1,30 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.ola{
+    color: aqua;
+}
+p{
+    border: 1px solid black;
+    display: inline;
+    position: absolute;
+
+}
+img{
+    width: 150px;
+    position: relative;
+
+    
+
+}
+img:hover{
+    background-image: url(/imagens/278135273_5637983876231540_3444206009079427067_n.jpg);
+   
+}
+.ji{
+    text-align: center;    
+    background-color: blue;
+    margin: 10px;
+    padding: 5px;
+
+}

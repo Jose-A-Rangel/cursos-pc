@@ -1,0 +1,19 @@
+@keyframes changeColor{
+
+    0%{ background-color: red; width: 200px;}
+    25%{background-color: blue; border-radius: 40%;}
+    50%{background-color: rebeccapurple; border-radius:50%;}
+    100%{background-color:tomato; width: 400px; height: 400px;}
+}
+/*
+Da pr colocar propriedade dentro, colo autura, e bodas.
+fazer do tamanho que vc quiser.
+*/
+
+.box{
+    width: 200px;
+    height: 200px;
+    border-style:solid ;
+    animation-name: changeColor;
+    animation-duration: 20s;
+}

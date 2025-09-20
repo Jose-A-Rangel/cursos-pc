@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+
+
+
+
+        /*
+        function mundarCor(){
+            let h = document.getElementsByTagName("h1")[0]
+
+            h.style.color = "blue";
+
+        
+        }
+            */
+
+         var numero = 0;
+
+         var interval;
+
+
+        function atualizarText(){
+            let h = document.getElementsByTagName("h1")[0]
+            h.innerHTML += " " + numero;
+            numero++;
+
+            /*
+            explicando, aqui a funlçao ela vai fazer o titulo mundar e adicionar numero, os numeros sao colocado por (numero++;) assim ele vai fazendo as adicoes dos numeros.
+
+            vai comersar com o zero, por conta que la na variavel(var) ta falando
+            */
+        }
+
+        /*
+        para fazer isso, vai precisar do setTimeout, vai ter um função dentro dele e o tempo, com isso, o que fiver dentro da funtao dele é o que vai ser realizado, e o tempo vai ser difinilo no setTimeout(f, tempo)
+        
+        */
+
+        function iniciar(){        
+                    
+
+            interval =setInterval( atualizarText, 1000);
+
+            /*
+            setInterval(função, tempo que vai ser realzado)  vai precisar de uma finçõa e o tempo que vai precisa pr fazer o efeito->  
+            */
+
+        }
+        function parar(){
+            clearInterval(interval );
+
+            /*
+            com essa funtao, vai fazer parar a contagem.
+            */
+        }
+
+
+
+    </script>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <input onclick="iniciar()" type="submit" value="Muldar">
+    <input onclick="parar()" type="submit" value="Parar">
+</body>
+</html>

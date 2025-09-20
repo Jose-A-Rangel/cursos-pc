@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1
+        {
+            /* box-level*/
+
+            /*tranformando o  box-level em iniline.
+            
+            é so usar  display: inline;
+            */
+            /*display: inline;*/
+            height: 300px;
+            width: 300px;
+            background-color: burlywood;
+            border-width:10px ;/*grossura  da borda*/
+            border-style: solid; /*estilo da borda*/
+
+            padding-top: 10px; /*em cima*/
+            padding-right: 20px; /*direta*/
+            padding-bottom: 30px; /*baixo*/
+            padding-left:40px ; /*esquerda*/
+
+            margin-top: 20px; /*em cima*/
+            margin-right: 40px;/*direita*/
+            margin-bottom: 50px;/*baixo*/
+            margin-left: 10px;/*esquerda*/
+
+            margin: auto; /*
+            para deixar a caixa box-level centralizada
+            se for uma caixa.
+            */
+
+            outline-width: 5px; /*largura */
+            outline-style: dashed;/*eveito*/
+            outline-color: blue;/*cor*/
+            
+
+        }
+        a
+        {
+            /* iniline-level*/
+
+            /*
+            tramformando o iniline-level para box-level, usar o 
+
+            display: block;
+            assim vc consegue tranforma.
+
+
+            */
+            /*display: block;*/
+
+            /**/
+            
+            border-width:10px ; /*largura */
+            border-style:solid ;/*eveito*/
+            border-color: red;/*cor*/
+        }
+    </style>
+</head>
+<body>
+    <h1>exemplo de caixas box-level</h1>
+    <p>Paragrafos tabem são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. vamos ver como tudo isso funcionas.</p>
+</body>
+</html>

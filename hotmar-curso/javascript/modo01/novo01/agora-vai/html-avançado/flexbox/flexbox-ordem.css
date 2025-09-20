@@ -1,0 +1,42 @@
+.container{
+     display: flex;
+
+
+    background-color: darkgray;  
+    height: 290px;
+    color: white;
+   
+    
+
+    
+
+    
+    
+   
+}
+.r1{
+   order:2 ;
+    background-color: red;
+}
+.r2{
+    order:0;    
+    background-color: blue;
+}
+.r3{
+   order: -3;
+    background-color: green;
+}
+
+.rect{
+width: 250px;
+height: 100px;
+
+}
+/*
+order: ; 
+so funciona se o 
+display: flex estiver junto
+
+
+td vao esta com zero, vc pode modificar tds se quiser, so precisa mundar a ordem dele.
+*/

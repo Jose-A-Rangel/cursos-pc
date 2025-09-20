@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positions-relativo</title>
+    <style>
+        /*
+        ta td de baixo um do outro pq a div é tipo bloc, fazendo assim tomando td o esparsso ate o fim, com isso deixando as outra div com espasso so mente na proxima linha.
+
+
+        display: inline-block; -> usando isso vai deixar td um do lado da outra.(isso transforma o inline em block)
+
+
+        */
+        .quadrado{
+             /*display: inline-block;*/
+            width:100px ; /*largura*/
+            height: 100px; /*altura*/
+        }
+        .quadrado-red{
+            position: relative;
+            left: 500px;
+            top: 100px;
+            background-color: red;
+        }
+        .quadrado-blue{
+            background-color: blue;
+            position: relative;/*vai pode fazer auteraçoes, como direta e para esquerda, cima e em baixo.*/
+            left: 700px; /*vai se mecher par esquerda. */
+            top: 200px;/*vai se mecher pr baixo*/
+            
+        }
+        .quadrado-green{
+            position: relative;
+            left: 600px;
+            background-color: green;
+        }
+        .quadro{
+            position: relative;
+            left: 300px;
+            width: 800px; /*largura*/
+            height: 400px;/*altura*/
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="quadro">    
+        <div class="quadrado quadrado-red" ></div>
+        <div class="quadrado quadrado-blue" ></div>
+        <div class="quadrado quadrado-green" ></div>
+    </div>
+</body>
+</html>

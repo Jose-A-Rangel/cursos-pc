@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <script>
+        
+        function changeH1(input){
+            //let input = document.getElementById("text") // para acha a tag
+            let h1 = document.getElementsByTagName("h1")[0]
+            h1.innerText = input.value;
+            // h1-> tag que vai ser subistituida, 
+            // innerText -> vai ser usando pr fazer a escreve na pagina
+            //input -> foi coloca a informação de onde ta a tag.
+            // value-> valor dele.
+    
+        }
+
+
+    </script>
+
+
+</head>
+<body>
+    <h1 onclick="">
+        <!--
+        onclick=""-> atributos de efestos, vai fazer o efeito que esta dentro dele.
+        -->
+        clique em mim
+    </h1>
+
+    <input type="text" onchange="changeH1(this)" >
+</body>
+</html>

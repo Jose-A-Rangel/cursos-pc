@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meida-querires</title>
+    <style type="text/css"> 
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            overflow: hidden; /*ele que faz ficar flutuando*/
+            margin: auto;/*deixa no centro*/
+            width: 80%;
+            background: #5c57a4;
+            padding: 15px;
+            font-size: 18px;/*tamanho do texto*/            
+        }
+        .menu{            
+            list-style: none; /*para tira a bola que fica do lado*/
+            margin: 0;/*usando pr diminuir o volome*/
+            padding: 0;/*usando pr diminuir o volome*/
+            float: right;/*para jogar td pr direta*/            
+        }
+        li{
+            display: inline-block;/*para deixar um do lado do outro*/
+            color: white;
+            margin-left: 15px ;
+
+            
+        }
+        .logo{
+            float: left;
+           
+            color: white;
+        }
+        @media screen and (max-width:900px){    
+            .header{
+                background-color: red;
+            }
+            
+        }
+
+        @media screen and (max-width:700px){
+            .header{
+                background-color: blueviolet;
+            }
+            .logo{
+                float: none;
+                text-align: center;
+            }
+            .menu{
+                margin-top: 20px;
+                float: none;
+                text-align: center;
+            }
+            li{
+                float: none;
+                background: red;
+                margin-bottom: 5px;
+                padding: 10px;
+            }
+        }       
+        
+
+
+    </style>
+
+
+</head>
+<body>
+    <div class="header">
+        <div class="logo">  
+            logo
+        </div>
+        <ul class="menu">
+            <li>Home</li>
+            <li>Cursos</li>
+            <li>Contatos</li>
+        </ul>
+    </div>
+</body>
+</html>

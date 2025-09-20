@@ -1,0 +1,48 @@
+.container{
+     display: flex;
+
+
+    background-color: darkgray;  
+    height: 290px;
+    color: white;
+   
+    
+
+    
+
+    
+    
+   
+}
+.r1{
+    background-color: red;
+}
+.r2{
+    flex-grow:1;
+    background-color: blue;
+}
+.r3{
+    flex-grow:2 ;
+    background-color: green;
+}
+
+.rect{
+width: 250px;
+height: 100px;
+
+}
+
+/*
+ flex-shrink: 0;
+ ele permite se vai ou nao incoler.
+ dependo do numero que estiver.
+ 0 -> nao permite
+ 1 -> permite
+*/
+
+
+/*
+ flex-grow:1 ; 
+ permine se vai ou nao incoler.
+ zero quer dizer que nao vai, de 1 pr frente vai alungar. cada numero quer dizer a multiplicação do outro.
+*/

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+    <script>
+        /*
+            de strig pr objeto e de objeto pr string
+        */
+
+        //objeto
+        let a = {
+            nome: "igor",
+            nota: 8.5
+        }
+        // tranformou em uma string
+        let b = JSON.stringify(a)
+
+        console.log(a)
+        console.log(b)
+
+        //uma strig
+        let a2 = '{"nome": "fabio","nota":7.8}';
+        // um objeto
+        let b2 = JSON.parse(a2)
+
+        console.log(a2)
+        console.log(b2)
+
+        
+
+
+
+
+
+        // persistencia de dados. 
+
+        //localStorage.setItem("nome","igor");// guarda os dados(precisa passar duas coisa, um vai ser a chave e o outro vai ser o valor que quer amarzena.)
+
+        //localStorage.getItem() // usa o dado. exemplo em baixo.
+        /*let n= localStorage.getItem("nome") 
+        console.log(n)
+        */
+
+
+        //localStorage.removeItem()//distroi o dado. exemplo a baixo.
+        /*
+        localStorage.removeItem("nome")
+        */
+
+
+
+        onload = function(){
+            let nome = localStorage.getItem("nome");
+            let h1 = document.getElementById("nome")
+            h1.innerHTML = nome;
+        }
+
+        function atualizar(Element){
+             let valor = Element.value;
+             console.log(valor)
+
+
+             let h1 =document.getElementById("nome");
+             h1.innerHTML = valor;
+
+
+             localStorage.setItem("nome",valor);
+
+        }
+
+
+        // outro exemplo.
+        /*
+        
+        let a = {nome: "igor", n1:7.3}
+
+        localStorage.setItem("aluno", JSON.stringify(a));
+
+        let a = localStorage.getItem("aluno");
+        console.log(JSON.parse(a));
+
+        */
+
+        
+
+
+
+        
+
+    </script>
+</head>
+<body>
+    <h1 id="nome"></h1>
+
+    <input type="text" oninput="atualizar(this)">
+    <!--
+        oninput=""-> usado pr modificar, nesse caso ele vai ezecuta uma função.
+        função atualizar.
+        this-> usado pr pega o elemento.
+
+    -->
+
+
+</body>
+</html>

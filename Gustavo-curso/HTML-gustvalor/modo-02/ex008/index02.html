@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modelo de caixas</title>
+    <style>
+        /*
+        caixas box-level é caixa que vai tomar a linha total, sempre vai iniciar uma nova linha
+        */
+        h1
+        {
+            border: 5px solid blue;
+
+            padding-top:40px;
+            padding-left:40px;
+            padding-right: 80px;
+            padding-bottom: 80px;            
+
+            background-color: aqua;
+
+            outline-offset:1px ;
+            outline-width:10px ;
+            outline-style:groove ;
+            outline-color: blueviolet;
+
+            height: 10px; /*autura*/
+            right: 2px; /*largura*/
+
+            text-align: center;
+
+            margin-top:100px ;
+            margin-left: 200px;
+            margin-right: 400px;
+            margin-bottom: 500px;
+
+            margin:auto ;
+            
+
+        }
+        a
+        {
+
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Exemplo de caixas box-level
+    </h1>
+    <p>
+        Paragrafos tambem são exemplos de box-level, mas os <a href="#">links são exemplos de caixas iniline-level</a>. Vamos ver como tudo isso funcionas.
+    </p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+.container{
+    background-color: darkgray;
+    height: 400px;
+    color: white;
+    display: flex;
+    /*
+    flex-direction: column;
+    flex-wrap: wrap;
+    */
+
+    flex-flow:  column wrap;
+    
+   
+}
+.r1{
+    background-color: red;
+}
+.r2{
+    background-color: blue;
+}
+.r3{
+    background-color: green;
+}
+
+.rect{
+width: 200px;
+height: 200px;
+
+}
+
+/*
+flex-direction: column; vai deixar como coluna
+*/
+
+/*
+flex-wrap: wrap;
+faz td caber na tag pai.
+*/
+
+/*
+A propriedade flex-flow é uma forma abreviada (shorthand) que combina duas propriedades do Flexbox:
+*/

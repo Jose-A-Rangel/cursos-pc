@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caixas01</title>
+    <style>
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header
+        {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav
+        {
+            background-color:rgb(102, 102, 102) ;
+            padding: 3px;
+        }
+        nav > a
+        {
+            text-decoration: none; /*tira o efeito*/
+            color: white;
+            font-weight: bold; /*fica em necrito*/
+            margin-left: 30px;
+        }
+        nav > a:hover
+        {
+            text-decoration: underline;
+            /*para volta o efeito, porem aqui so vai volta quando o maose passar por cima */
+        }
+        main
+        {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        article
+        {
+            background-color: lightgrey;
+            padding: 5px;
+        }
+        article > aside
+        {
+            /*aside é o filho*/
+            background-color: rgb(165, 165, 165) ;
+        }
+        footer
+        {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding:1px;
+            margin: 0px;
+        }
+
+    </style>
+</head>
+<body>
+   <header>
+    <!--cabesario-->
+    <h1>Meu site</h1>
+    <nav>
+        <!--uma dive, box-level-->
+        <a href="#">Links</a>
+        <a href="#">Links</a>
+        <a href="#">Links</a>
+        <a href="#">Links</a>
+    </nav>    
+   </header>
+   <main>
+        <section id="assunto">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias do Brasil</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea exercitationem alias, doloremque dicta asperiores expedita. In repellat odio, porro optio doloribus ratione dicta itaque sapiente, quod veritatis accusantium et eum.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nemo blanditiis vitae! Sunt quia doloremque quis quaerat expedita voluptatum distinctio, enim voluptas soluta dolores quidem minus, harum deleniti pariatur tempore.
+                </p>
+                <aside>
+                    <p>Artigo escrito por Jose da silva</p>
+                </aside>                
+            </article>
+        </section>
+   </main>
+   <footer>
+    <p>
+        Desenvolvido pelo José 
+    </p>
+   </footer>
+</body>
+</html>

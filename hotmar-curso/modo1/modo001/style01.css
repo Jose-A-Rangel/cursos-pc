@@ -1,0 +1,63 @@
+#primeira{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    /*o padding vai autera o tamanho da nosa tag de fato*/
+    border: 10px solid black;
+    /*o border tbm vai mudar o tamanho da tag*/
+}
+#segunda{
+    height: 100px;
+    width: 140px;/*para ficar com o mesmo valor que o primeiro, vai ter que mecher na largura(width), para ficar igual */
+    background-color: red;
+    color: white;
+}
+#terceira{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(0, 255, 55);
+    color: white;
+}
+#quarta{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(255, 247, 0);
+    color: white;
+    padding: 10px;
+    border: 10px solid black;
+    box-sizing: border-box; /* vai fazer td caber dentro da autura e largura */
+    /* isso é muito inportante, quando vc quer que permanesa td dentro, assim o padding e border nao vai fazer auteração. */
+ margin: 10px;
+    /* margin -> a margi vai fazer auteração, pq a margin é prafora do elemento. td que é fora do elemento vai fazer auteção.  */
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aqua;
+    border-color:black;
+    border-style:dashed ;
+    border-radius:15px;
+    margin: 10px;
+    background-color: burlywood;
+    padding: 20px;
+    text-align: center;
+
+}
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 51, 255);
+    border-color:black;
+    border-style:dashed ;
+    border-radius:15px;
+    margin-bottom: -10px;
+    background-color: rgb(160, 222, 135);
+    text-align: center;
+
+}

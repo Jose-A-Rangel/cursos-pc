@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;    
+}
+.container{
+    max-width: 1000px; /*limita o tamanho dele, porem prende ele na esquerda*/
+    margin: auto;/*deixar centralizado, fazendo assim sair do esquernda*/
+
+}
+header{
+    background-color: #48c5ce;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+.title{
+    font-size:26px ;
+
+}
+section{
+   padding: 20px;
+   background-image: url(./images/people.jpg);
+   background-size:cover ;
+   overflow: hidden;/*vai ajuda na imagens, td o que ela precisa preenicher */
+
+}
+.formContainer{
+    max-width: 230px; /*liminta*/
+    background-color: #ffffffbb;
+    padding: 20px;/*para deixar com espaço dentro*/
+    float: right;/*para ser jogando direta*/
+}
+h2{
+    font-size: 16px;
+}
+.mb{
+    margin-bottom: 15px;
+}
+input,select{
+    width: 100%;
+    box-sizing:border-box ;/*pr tds ficarem alinhado*/
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+input[type="submit"]{ /*quando vc quer deixar bem especifica a tag que vai usar*/
+    color: white;
+    background-color: #48c5ce;
+    font-weight: bold;
+}
+select{
+    -moz-appearance: none;
+    -webkit-appearance:none;
+    appearance: none;
+
+    background-image: url(./images/arrow.jpg);
+    background-repeat: no-repeat;
+
+    background-position-x:calc(100% - 10px) ;
+    background-position-y: center ;
+}
+footer{
+    background-color:#202121;
+    padding: 40px;
+    text-align: center;/*funciona, por que ta com o display: inline-block;*/
+
+}
+.picture{
+    width: 160px;
+}
+.description{
+    text-align: left;/*força o texto ficar de lado.*/
+    display: inline-block;
+    color: white;  
+    max-width: 40%;   
+    margin-left: 40px;  
+}
+.description p, .description h3{
+    margin-bottom: 20px;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom3.3</title>
+    <script>
+        function mudaa(elemento){
+            elemento.style.backgroundColor = "red"
+        }
+        function volta(elemento){
+            elemento.style.backgroundColor ="aquamarine"
+        }
+
+        function loaded(){
+
+            let h2 = document.getElementsByTagName("h2")[0]
+
+            h2.addEventListener("mousemove", troca)
+
+            function troca(){
+                this.innerHTML = "VAI LA AMRO"
+            }
+
+            h2.addEventListener("mouseout", troc)
+
+            function troc(){
+                this.innerHTML = "volta amor"
+            }
+            
+
+            let t = document.getElementById("mudar")
+            //gravado
+
+            t.addEventListener("mousemove", mudarText)
+
+            function mudarText(){
+                this.innerHTML = "Vamos mudar isso"
+            }
+
+            t.addEventListener("mouseout", novo)
+
+            function novo(){
+                this.innerHTML = "Com muita petistencia"
+            }
+
+           
+
+
+
+
+
+
+
+
+            let d1 = document.getElementById("d1");
+
+            console.log(d1.children)
+            // pega tds os filho dele.->children
+
+            let h1 =d1.children[0]
+            console.log(h1.parentElement)
+            // pega o pai da tag-> parentElement
+            
+
+
+        }
+    </script>
+   
+</head>
+<body onload="loaded()">
+    <h1 id="mudar">
+        cadastro
+    </h1>
+    <h2>
+        Ola mundo
+    </h2>
+
+    <div id="d1">
+        <h1>
+            titulo1
+        </h1>
+        <p>
+            qualquer texto
+        </p>
+
+        <div id="d2">
+            <h1>
+                titulo 2 
+            </h1>
+            <p>
+                qualque texto 2
+            </p>
+        </div>
+    </div>
+    <form >
+        <input type="text" nome = "Nome" placeholder="Nome">
+        <br>
+        <br>
+        <input type="text" nome = "Sobre-Nome" placeholder="Sobre Nome">
+        <br><br>
+        <input type="email" nome = "email" placeholder="Email">
+        <br>
+        <br>
+        <input type="submit" nome ="senha" value="confirma" onmousemove = "mudaa(this)" onmouseout = "volta(this)">
+
+    </form>
+</body>
+</html>

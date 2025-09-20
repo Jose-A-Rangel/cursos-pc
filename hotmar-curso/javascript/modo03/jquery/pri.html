@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeiro</title>
+</head>
+<body>
+    <h1 id="sair" style="display: none;">Nao saia agora</h1>
+    <h1 >Esse é um titulo h1</h1>
+    <h1 class="titulo">outro titulo</h1>
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(".titulo").click(() => {
+            console.log("click")
+        })
+        $(".titulo").mouseenter(()=>{
+            console.log("MOUSE ENTER")
+        })
+        $(".titulo").mouseleave(() => {
+            console.log("Mouse leave")
+        })
+        $(".titulo").dblclick(()=>{
+            console.log("double click")
+        })
+
+
+        $(document).mouseleave(()=> {
+            $("#sair").show();
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: red;
+}
+.primeira{
+    width: calc(100% - 60px);
+    height: 100px;
+    background-color: blue;
+    margin: auto;
+}
+
+/*
+Ótima pergunta! calc() é uma função super útil no CSS que permite fazer cálculos diretamente dentro de propriedades de estilo. Ela é muito usada quando você quer misturar diferentes unidades (como % e px) ou ajustar valores dinamicamente.
+*/
+img{
+    width: 420px;
+    transform: skew(40deg);
+}
+/*
+transform: rotate(45Deg); vai toracionar a imagens, pode ser negativo, assim rodando pr o outro lado.
+
+scale(2)-> modifica a imagen, fazendo ele diminuir ou se colocar um valor a menos que zeuro ele vai diminuir.
+
+
+skew(40deg)-> da uma deslizada na imagens.
+
+
+
+
+*/

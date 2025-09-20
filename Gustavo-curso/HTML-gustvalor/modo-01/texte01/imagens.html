@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens</title>
+</head>
+<body>
+    <h1>Imagens de diferente tamanhos.</h1>
+  <p>
+    tente abrir esses site em varios dispoitivos ou simplesmente aumente e diminua o tamanho do seu navegador.
+  </p>
+  <!--para vc criar varias telas de tamanho diferente é preciso usar a tag 
+    picture.
+    ela vai ajuda nesse processo.
+-->
+<h2>modelo do maior para o menor.</h2>
+<picture>
+    <source media="(max-width:750px )" srcset="../ex007/imagens-ex007/fot-p.png" type="image/png">
+    <source media="(max-width:1050px )" srcset="../ex007/imagens-ex007/fot-m.png" type="image/png">
+<img src="../ex007/imagens-ex007/fot-g.png" alt="imagens flexivel">
+</picture>
+
+
+
+
+<!--
+    dentro do "picture" 
+    vai ser colocado primeiro a imagen, podendo ser a maior ou a menor, cada uma vai definir se vai ser cresente ou decrecente.
+-->
+<!--
+    fazendo o modo decresente.
+    primeor colocar a imagens grade com a tag "img"
+    depois usar a tag "source" (nesse caso vai ser max-width) que isso é do maior para p menor.
+    vai dar continuidade com a imagen media "
+    <source media="(max-width:1050px )" srcset="../ex007/imagens-ex007/fot-m.png" type="image/png">"
+
+    depois vai para a menos.
+
+    <source media="(max-width:750px )" srcset="../ex007/imagens-ex007/fot-p.png" type="image/png">
+
+
+
+-->
+<h2>Modelo do menor para o maior.</h2>
+<picture>
+    <source media="(min-width:1050px )" srcset="../ex007/imagens-ex007/fot-g.png" type="image/png">
+    <source media="(min-width:750px )" srcset="../ex007/imagens-ex007/fot-m.png" type="image/png">
+    <img src="../ex007/imagens-ex007/fot-p.png" alt="imagens- flexivel">
+
+</picture>
+<!--
+    para fazer o modo cresente, vai ter que comesar pela a imagens menor.
+
+    colocar a imagens menor com a tag "img".
+
+    mais depois vai ser colcoar com a tag source.
+
+    segunda imagens colocar na tag source, com a discrição do tamnho em px.
+    <source media="(min-width:750px )" srcset="../ex007/imagens-ex007/fot-m.png" type="image/png">
+
+    terceira imagens tbm vai ser colocar com a tag source, tbm vai precisar de informar o tamanho em px.
+     <source media="(min-width:1050px )" srcset="../ex007/imagens-ex007/fot-g.png" type="image/png">
+
+
+
+-->
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>posiçao-vertical</title>
+    <style type="text/css">
+        body{
+            font-size: 1.2rem;
+        }
+        .card{
+            width: 400px;
+            height: 200px;
+            border: 2px solid green;
+            float: left;
+            text-align: center;
+            position: relative;
+        }
+        .c1{
+            background-color: red;
+            line-height: 200px;/*aqui vc vai precisar saber, o valor da auta pr pegar a metade certa.*/
+            color: white;
+            
+        }
+        .c2{
+            background-color: blue;
+            color: white;
+            position: absolute;
+            TOP: 50%;
+            left: 50%;
+
+            transform: translate(-50%,-50%);/*9,13 tempo*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="c1">
+            Jose Alves Rangel
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="c2">
+            Jose Alves Rangel
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>

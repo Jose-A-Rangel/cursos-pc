@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-elementos</title>
+    <style>
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a
+        {
+            color: rgb(191, 0, 255);
+            text-decoration: none; /* barra de baixo */
+        }
+        a:visited
+        {
+            color: cadetblue;
+            
+        }
+        a:hover
+        {
+            text-decoration: underline;
+            color: blue;
+        }
+        a:active
+        {
+            color: chartreuse;
+        }
+        a::after
+        {
+            content: ' [links]';
+            text-decoration: none;
+            font-weight: normal;
+            color: black;
+        }
+        a::before
+        {
+            content: 'OLHA AQUI    ';
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.cursoemvideo.com/minha-conta/" target="_blank">cursoemvideo</a></li>
+        <li><a href="https://www.crunchyroll.com/pt-br" target="_blank" >crunchy</a></li>
+        <li><a href="https://www.primevideo.com/region/na/storefront?contentId=IncludedwithPrime&ref_=atv_nb_lcl_pt_BR&language=pt_BR&ie=UTF8&contentType=merch&merchId=IncludedwithPrime" target="_blank">prime-video</a></li>
+    </ul>
+</body>
+</html>

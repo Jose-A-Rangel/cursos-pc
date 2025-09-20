@@ -1,0 +1,115 @@
+/*:: indica que vc vai usar 2 pseudo elemtos.  */
+
+
+/*
+Em CSS, o seletor ::first-line é um pseudoelemento que permite aplicar estilos apenas à primeira linha de um bloco de texto. Isso é útil quando você quer dar destaque à linha inicial de um parágrafo, como mudar a fonte, cor ou estilo dela.
+ Observações:
+Funciona apenas com elementos de bloco (como <p>, <div>, etc.).
+
+Os estilos que podem ser aplicados ao ::first-line são limitados. Exemplos válidos:
+
+font
+
+color
+
+letter-spacing
+
+word-spacing
+
+line-height
+
+text-transform
+
+vertical-align
+
+background
+*/
+p::first-line{
+ color: red;
+}
+
+/*
+O ::first-letter é um pseudoelemento do CSS que serve para aplicar estilos somente à primeira letra de um bloco de texto.
+*/
+
+p::first-letter{
+    color: aqua;
+}
+
+
+li{
+    list-style: none;
+    /*para tira o estilo de lista*/
+}
+
+/*
+O ::before é um pseudoelemento em CSS que permite inserir conteúdo antes do conteúdo real de um elemento, sem alterar o HTML diretamente.
+*/
+
+li::before{
+    content: "A ";
+    color: blue;
+    font-size: 20px;
+
+
+
+}
+
+/*
+📌 O que é ::after?
+É um pseudoelemento CSS que serve para inserir conteúdo extra após o conteúdo do elemento, sem precisar editar o HTML.
+
+Excelente! O ::after é o irmão gêmeo do ::before, só que ele insere conteúdo depois do conteúdo real de um elemento.
+*/
+li::after{
+    content: " Ola";
+    color: blueviolet;
+}
+
+/*
+Boa! O ::selection é um pseudoelemento CSS que permite estilizar a parte do texto que o usuário seleciona com o mouse ou teclado (quando ele “passa o mouse e arrasta” para marcar o texto).
+
+📌 Para que serve?
+Usado para personalizar a aparência da seleção de texto, por exemplo mudando a cor de fundo e a cor do texto quando ele é selecionado.
+*/
+p::selection{
+    background-color: burlywood;
+    color: chartreuse;
+}
+
+/*quando digitado ele deixar em foco com a cor mecionada.*/
+input:focus{
+    color: brown;
+}
+
+/*:first-child é uma pseudo-classe que seleciona o primeiro filho de um elemento pai.*/
+
+/*
+li:first-child{
+    color: blueviolet;
+} */
+
+/*
+O que é :first-of-type?
+A pseudo-classe **:first-of-type** seleciona o primeiro elemento de um tipo específico (como p, h2, div, etc.) entre os filhos do mesmo pai.
+
+🔍 Diferença entre :first-child e :first-of-type
+Seletor	O que faz
+:first-child	Seleciona o primeiro filho (de qualquer tipo)
+:first-of-type	Seleciona o primeiro filho de um tipo específico
+*/
+
+/*
+li:first-of-type{
+    color: chocolate;
+}*/
+
+li:nth-last-of-type(2n){
+    color: chartreuse;
+}
+
+#tela{
+    background-color: aquamarine;
+}
+
+

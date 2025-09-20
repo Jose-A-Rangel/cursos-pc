@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <script>
+        function onOver(elemneto){
+            elemneto.style.backgroundColor ="red"
+            //quando o mause estiver em cima do nosso elemento, vai ser modificado a cor pr vermelho.
+        }
+        function onOut(elemneto){
+            elemneto.style.backgroundColor = "aqua"
+        }
+
+    </script>
+
+    <style>
+        img{
+            width: 200px;
+            margin-bottom: 25px;
+        }
+
+        div{
+            display: inline;
+            padding: 10px;
+            font-size: 2rem;
+            background-color: aqua;
+            color: aliceblue;
+        }
+
+    </style>
+
+
+</head>
+<body onload="console.log('pagina completamento carregada!')" >
+    <!--
+    onload="" -> esse evenyo vai ser carregado quando td os evento forem carregados.
+
+    onmouseout -> quando o mause sair vai volta a cor.
+    -->
+    <img src="/imagens/246385524_3140873906234981_7835808733972800403_n.jpg" alt="">
+    <br>
+    <div onmouseover="onOver(this)" onmouseout="onOut(this)">
+        Click
+    </div>
+</body>
+</html>

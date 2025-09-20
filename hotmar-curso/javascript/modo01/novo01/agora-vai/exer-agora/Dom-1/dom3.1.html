@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom3.1</title>
+    <script>
+        function loaded(){
+            let t = document.getElementById("mudar")
+            // grava a tag
+
+            t.addEventListener("mousemove", mudarText)
+
+            function mudarText(){
+                this.innerHTML = "Vamos la kkk"
+            }
+
+            t.addEventListener("mouseout", vonta)
+
+            function vonta(){
+                this.innerHTML = "texte de escrita...1"
+            }
+
+            //essa parte tem que ficar fora, para assim pode pegar.
+
+        }
+
+        function mudarr(elemento){
+                elemento.style.backgroundColor = "red"
+            }
+
+            function voltarr(elemento){
+                elemento.style.backgroundColor ="aquamarine"
+            }
+    </script>
+
+
+
+</head>
+<body onload="loaded()">
+    <h1>
+        texte de escrita
+    </h1>
+
+    <form >
+        <input type="text" placeholder="Nome">
+        <br>
+        <br>
+        <input type="text" placeholder="Sobre Nome">
+        <br>
+        <br>
+        <input type="email" placeholder="Email">
+        <br>
+        <br>
+        <input type="submit" onmousemove="mudarr(this)"
+            onmouseout="voltarr(this)"
+        >
+
+    </form>
+
+    <h2 id="mudar"> 
+        mude o que ta ecrito, passando o mause
+    </h2>
+
+
+</body>
+</html>

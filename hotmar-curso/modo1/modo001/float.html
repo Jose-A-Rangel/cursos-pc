@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+
+        img{
+            float: left;/*vai ficar flutuando do lado do proximo elemento.*/
+        }
+
+
+
+        p{
+            /*display: inline; -> so vai deixar do lado, nao vai ajudar */
+
+            /*float é uma propriedade que vai fazer o elemento ficar futuando do lado de outro elemento. */
+
+
+            /*tbm temos a tag que nao permite que ninguems fique futuando do lado. 
+            clear:left: ;
+            clear:right: ;
+            clear:both: ; -> nao vai pode ficar em nem um dos lados.
+            
+            */
+        }
+        div{
+            border: 1px solid black;
+            background-color: red;
+            padding: 10px;
+            overflow: auto; /*com ele vai pegar tds os item que estao dentro da divi.*/
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <img src="/imagens/130454913_1123192244790616_3124457760153057776_o.jpg" width="120px">
+    <p>
+        texto qualquer Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, alias facilis? Laudantium, nihil ad! Sequi eligendi assumenda saepe perspiciatis velit aut eaque itaque molestiae vero reprehenderit. Nemo explicabo quaerat nihil!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia accusamus sapiente fuga blanditiis aperiam ex ea eos modi, incidunt saepe minima deleniti quam tempora inventore dignissimos error quo dolor voluptate!Lorem
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis iure rem itaque explicabo et, quasi praesentium, exercitationem, assumenda ipsum maiores repudiandae quod molestias. Rem vitae voluptas nobis enim ad?
+        texto qualquer Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, alias facilis? Laudantium, nihil ad! Sequi eligendi assumenda saepe perspiciatis velit aut eaque itaque molestiae vero reprehenderit. Nemo explicabo quaerat nihil!
+        
+    </p>
+    </div>
+</body>
+</html>

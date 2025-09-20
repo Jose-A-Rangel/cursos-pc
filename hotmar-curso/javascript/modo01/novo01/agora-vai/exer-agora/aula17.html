@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula17</title>
+    <style>
+        body{
+            background-color: cadetblue;
+        }
+    </style>
+    <script>
+
+        
+        function f(){
+            console.log("teste")
+            console.log("criado por onclick")
+            console.log(this)
+           
+            
+
+        }
+        function f1(){
+            console.log("teste f1")
+            console.log(" criado por addEventListener")
+            console.log(this)
+          
+            
+        }
+        window.onload = function(){
+            let h1 = document.getElementsByTagName("h1")[0];
+            // aqui em cima ele ja informou de onde vai pegar.
+            h1.addEventListener("click", f1);
+            // ja aqui explica a forma de como vc vai pegar ele, click(vc vai pega clicando) e f1 é a função que ele vai fazer. 
+        }
+        // quando clicado ele faz os 2 texte, que vai dar 
+    </script>
+</head>
+<body>
+    <h1 onclick="f()">
+        title
+    </h1>
+
+    <!--
+        comparação  no evento feito no html com o onclick ou o evento criando no addEventListener no java escript
+
+
+
+        quando criado com addEventListener não é nessario colocar os parentece, so é passando a referencia da função. quando é criado dessa forma o ele ja é o nosso elemento. 
+
+
+        quando é criando com o html (onclick) é preciso colocar os parentece. 
+        assim que ele é criando, ele ainda é o nosso objeto windo.
+
+
+
+    -->
+</body>
+</html>

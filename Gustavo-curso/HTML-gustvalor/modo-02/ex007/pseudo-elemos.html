@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-elementos</title>
+    <style>
+
+        /*
+        SELETORES PERSONALIZADOS
+
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-elemento
+        > = clildren (filho )
+        */
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a
+        {
+            color: red; /* deixa tds vermelho, visitado ou nao.*/
+            text-decoration: none; /*tita a barra de baixo do link*/
+        }
+        a:visited
+        {
+            color: aqua;
+            /*
+            quando vc ja vizitou o site
+            */
+        }
+        a:hover
+        {
+            text-decoration: underline;
+            /*quando passa o mause vai cria o barra no links.*/
+            color: black;
+        }
+        a:active
+        {
+            color: yellow;
+            /*
+            quando vc quica, e segura, vai ficar amarelo.
+            */
+        }
+        a::after
+        {
+            /*pseudo-elemeto after(quer dizer depois) */
+            content: ' [links]';
+            text-decoration: none;
+            font-weight: normal;
+            color: black;
+        }
+        a::before
+        {
+            content: 'OLHA AQUI ';
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.cursoemvideo.com/minha-conta/" target="_blank">cursoemvideo</a></li>
+        <li><a href="https://www.crunchyroll.com/pt-br" target="_blank" >crunchy</a></li>
+        <li><a href="https://www.primevideo.com/region/na/storefront?contentId=IncludedwithPrime&ref_=atv_nb_lcl_pt_BR&language=pt_BR&ie=UTF8&contentType=merch&merchId=IncludedwithPrime" target="_blank">prime-video</a></li>
+    </ul>
+
+</body>
+</html>

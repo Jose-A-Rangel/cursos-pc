@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>texte de imagens de fundo</title>
+    <style>
+        div.quadrado
+        {
+            border: 2px solid black;
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            background-color: aquamarine;
+            display: inline-block;
+        }
+        div#q1
+        {
+            background-color: blue;
+            /*
+            background-color
+
+            usado pr colocar cor
+
+            */
+        }
+        div#q2
+        {
+            background-image: linear-gradient(to bottom, rgb(136, 255, 0), rgb(221, 0, 255));
+            /*
+            background-image: linear-gradient
+
+            usado para colocar 2 cores, pode ser de baixo par cima ou da laterais
+            */
+        }
+        div#q3
+        {
+            background-image: url(imagens/wallpaper002.jpg);
+        }
+        div#q4
+        {
+            background-image: url(imagens/wallpaper005.jpg);
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1"></div>
+    <div class="quadrado" id="q2"></div>
+    <div class="quadrado" id="q3"></div>
+    <div class="quadrado" id="q4"></div>
+    
+
+</body>
+</html>

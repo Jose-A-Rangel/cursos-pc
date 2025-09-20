@@ -1,0 +1,26 @@
+
+/*
+*/
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 300px; /* deixa td um de baixo do outro*/
+    margin: auto;/*deixa centralizado*/
+    background-color: aquamarine;
+    padding: 20px;
+    border-radius: 10px;
+
+
+
+}
+input{
+    width: 100%; /*pega 100 da pargura do pai*/
+    display:block ;/*nao vai ficar nada do lado dele.*/
+    padding: 5px;/*pr aumenta a largura de dentro. */
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+button{
+    border-radius: 7px;
+    width: 100%;    
+}

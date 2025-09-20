@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedado localmente</h1>
+    <p>Este video esta hospedado no meu proprio servidor.</p>
+    <!--para poder colocar o video, temos que colocar vairos videos, por conta do navegador. vai tem viode que pode ser contativel com ele ou tbm nao pode ser colocado varios formato vai atender tds as especificaçoes.-->
+
+    <!-- controls para pode colocar os "source" e assim fazer a magica de pode colcoar tods os formatos. 
+    quando fot colocar os videos, colocar por ordem de maior  pr o menor (o que seria isso, ccolocar o mais pesado ate o arquico mais leve.) -->
+
+    <!--
+        width é largura
+
+        poster = pr colocar uma imagens.
+
+        loop=> vai ficar rodando direto.
+    -->
+
+    <!--
+        source => pr colocar os videos, nor diversos formatos.
+    -->
+    <video controls width="500" poster="imagens/limoes-capa.png" loop>
+        <source src="videos/meu-video.m4v" type="video/mp4">
+        <source src="videos/meu-video.mp4" type="video/mp4">
+        <source src="videos/meu-video.webm" type="video/webm">
+    </video>
+    <!--
+        deveria ter tbm um arquivo ogg, porem nao tenho o conversor pr isso.
+    -->
+    <!-- 
+        videos ospedados no seu proprio sati, pode e vao consumir muito trafico de dados.
+    -->
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+
+        function mundarCor(){
+            let h = document.getElementsByTagName("h1")[0]
+
+            h.style.color = "blue";
+        }
+
+        /*
+        para fazer isso, vai precisar do setTimeout, vai ter um função dentro dele e o tempo, com isso, o que fiver dentro da funtao dele é o que vai ser realizado, e o tempo vai ser difinilo no setTimeout(f, tempo)
+        
+        */
+
+        function mudarTexto(){
+            let h = document.getElementsByTagName("h1")[0]
+
+            h.innerHTML = "Novo Titulo";
+
+            setTimeout(mundarCor , 1000)
+
+            /*
+            tami é o delei que vai ter. 
+
+            setTimeout( função , tempo )
+            */
+
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <input onclick="mudarTexto()" type="submit" value="Muldar">
+</body>
+</html>

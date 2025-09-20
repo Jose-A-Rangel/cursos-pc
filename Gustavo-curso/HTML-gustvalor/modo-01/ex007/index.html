@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIDIAS EM HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinamica</h1>
+    <p>
+        Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+    <!--
+        picture permiti que vc crie varios fontes.
+
+        essa tag ajuda a deixar o site mais reciprico, assim pode abrir no celular, tablet e pc, as imagens vao ficar bem correta para cada dispositivos.
+
+        primeiro vem a imagens principal pode ser a maior ou a menos, o tamanho que vc colocou vai definir a ordem que vai ser colocado as outras.
+        se colocou as maior, vai ser do maior para o menor.
+        se colocou a menor, vai ser do menor para o maior.
+
+    -->
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens-ex007/fot-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens-ex007/fot-m.png" type="image/png">
+        <img src="imagens-ex007/fot-g.png" alt="imagens flexivel">
+    </picture>
+    <img src="" alt="">
+</body>
+</html>

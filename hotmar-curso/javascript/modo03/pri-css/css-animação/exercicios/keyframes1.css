@@ -1,0 +1,16 @@
+@keyframes changeColor{
+    form{background-color: red;}/*inicio*/
+    to{background-color: blue;}/*termino*/
+}
+
+
+
+
+.box{
+    width: 200px;
+    height: 200px;
+    border-style:solid;
+    animation-name: changeColor; /*nome da animação*/
+    animation-duration:20s ;/*tempo de duração da animação*/
+
+}

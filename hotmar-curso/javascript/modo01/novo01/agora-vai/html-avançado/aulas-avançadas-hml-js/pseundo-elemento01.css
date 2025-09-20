@@ -1,0 +1,32 @@
+p::first-line{
+    color: red;
+}
+p::first-letter{
+    color: blueviolet;
+}
+li{
+    list-style: none;
+}
+li::before{
+    content: "AB  ";
+    color: aqua;
+    font-size: 10px;
+}
+
+li::after{
+    content: "  TR";
+    color: brown;
+    font-size: 10px;
+}
+
+p::selection{
+    background-color: aqua;
+    color: blue;
+}
+input:focus{
+    color: chartreuse;
+}
+
+li:nth-last-of-type(2n){
+    color: chocolate;
+}
